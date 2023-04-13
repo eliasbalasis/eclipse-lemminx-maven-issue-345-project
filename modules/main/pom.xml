@@ -56,12 +56,26 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!--
+			CLASSPATH FIX
+			for Log4J2 zero day vulnerability
+			-->
 			<dependency>
 				<groupId>org.apache.logging.log4j</groupId>
 				<artifactId>log4j-bom</artifactId>
 				<version>${version.log4j-bom}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<!--
+			Shared Libraries
+			-->
+			<dependency>
+				<groupId>mygroup</groupId>
+				<artifactId>eclipse-lemminx-maven-issue-345.tools.BOM</artifactId>
+				<version>${version.tools.BOM}</version>
+				<scope>import</scope>
+				<type>pom</type>
 			</dependency>
 			<!--
 			Spring Boot

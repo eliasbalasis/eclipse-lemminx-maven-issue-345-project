@@ -40,22 +40,6 @@
 		<module>modules/main</module>
 	</modules>
 
-	<dependencyManagement>
-		<dependencies>
-			<!--
-			This MUST be first
-			so that transitive dependencies can be preserved
-			-->
-			<dependency>
-				<groupId>mygroup</groupId>
-				<artifactId>eclipse-lemminx-maven-issue-345.tools.BOM</artifactId>
-				<version>${version.tools.BOM}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<build>
 		<pluginManagement>
 			<plugins>
