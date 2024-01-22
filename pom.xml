@@ -7,10 +7,11 @@
 	<parent>
 		<groupId>mygroup</groupId>
 		<artifactId>eclipse-lemminx-maven-issue-345.root</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>eclipse-lemminx-maven-issue-345.project</artifactId>
+	<version>0.0.4-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
@@ -18,7 +19,7 @@
 
 		<version.docker-maven-plugin>0.37.0</version.docker-maven-plugin>
 
-		<version.tools.BOM>0.0.1-SNAPSHOT</version.tools.BOM>
+		<version.tools.BOM>0.0.3-SNAPSHOT</version.tools.BOM>
 
 		<spring-boot.server.port.default>8080</spring-boot.server.port.default>
 
